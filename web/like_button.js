@@ -3,6 +3,7 @@
 const e = React.createElement;
 
 class LikeButton extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = { liked: false };
@@ -15,6 +16,7 @@ class LikeButton extends React.Component {
 
     return e(
       'button',
+      // on a click, change state with set state
       { onClick: () => this.setState({ liked: true }) },
       'Like'
     );
