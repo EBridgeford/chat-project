@@ -1,6 +1,7 @@
 'use strict';
 
 const e = React.createElement;
+// import App from 'components/App.js';
 
 class LikeButton extends React.Component {
 
@@ -13,9 +14,10 @@ class LikeButton extends React.Component {
     if (this.state.liked) {
       return 'You liked this.';
     }
-
+    // <App />
     return e(
       'button',
+      
       // on a click, change state with set state
       { onClick: () => this.setState({ liked: true }) },
       'Like'
